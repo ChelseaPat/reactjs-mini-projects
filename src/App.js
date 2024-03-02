@@ -6,6 +6,8 @@ import React from 'react';
 import StarRating from './components/star-rating';
 import ImageSlider from './components/image-slider';
 import LoadMoreData from 'components/load-more-data';
+import menus from 'components/tree-view/data';
+import TreeView from 'components/tree-view';
 
 function App () {
     return (
@@ -27,7 +29,10 @@ function App () {
             /> */}
 
             {/* Load more products component */}
-            <LoadMoreData />
+            {/* <LoadMoreData /> */}
+
+            {/* Tree view component / menu UI component / recursive navigation menu */}
+            <TreeView menus={menus} />
         </div>
     );
 }

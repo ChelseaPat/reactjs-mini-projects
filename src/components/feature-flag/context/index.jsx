@@ -14,7 +14,6 @@ export default function FeatureFlagGlobalState({children}){
             const response = await featureFlagsDataServiceCall();
             setEnabledFlags(response);
             setLoading(false);
-            console.log(response);
         } catch (error) {
             setLoading(false);
             console.error(error);

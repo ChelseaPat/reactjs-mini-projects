@@ -22,8 +22,6 @@ export default function LoadMoreData() {
                 setProducts((prevData) => [...prevData, ...result.products]);
                 setLoading(false);
             }
-
-            console.log(result);
         } catch (error) {
             console.error('OH NO SOMETHING WENT WRONG: ', error);
             setLoading(false);

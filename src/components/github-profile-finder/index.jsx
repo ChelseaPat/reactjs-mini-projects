@@ -21,8 +21,6 @@ export default function GithubProfileFinder() {
             setUserData(data);
             setLoading(false);
         }
-
-        console.log(data);
     }
 
     useEffect(() => {
